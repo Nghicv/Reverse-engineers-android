@@ -11,5 +11,5 @@
   + Generate keystore: ```keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000```
   + ```zipalign -p 4 new_foo.apk new_foo2.apk```
   + ```apksigner sign --ks-key-alias alias_name --ks my-release-key.keystore new_foo2.apk``` (https://stackoverflow.com/questions/10930331/how-to-sign-an-already-compiled-apk)
-3. Setup Android physical device to catch network requests on Proxyman
+3. Setup Android physical device to catch network requests on Proxyman: 
   https://docs.proxyman.io/debug-devices/android-device
